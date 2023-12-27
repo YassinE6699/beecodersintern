@@ -1,0 +1,93 @@
+:root {
+    --contact-container-width: calc(100vw - 30rem); /* removing the margins */
+}
+
+.contact-container {
+    background-color: rgb(165, 4, 4);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 15rem;
+    margin-right: 15rem;
+    margin-bottom: 5rem;
+    border-radius: 2rem;
+    min-width: 40rem;
+}
+
+.contact-title {
+    color: white;
+    margin: 1rem 0rem;
+    font-size: calc(var(--contact-container-width) / 24);
+}
+
+.contact-infos {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.contact-left-part {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    width: 100%;
+}
+
+.contact-left-part-item {
+    border-radius: 0.75rem;
+    margin: 0.5rem 5rem;
+    width: 70%;
+    padding: 1.5rem;
+    font-size: calc(var(--contact-container-width) / 60);
+    /* font-size: 1.25rem; */
+    border: none;
+}
+.contact-left-part-item:focus {
+    outline: none;
+    background-color: #e0e0e0;
+}
+
+.contact-left-part-btn:hover {
+    cursor: pointer;
+    background-color: #e0e0e0;
+}
+
+.contact-left-part-btn:active {
+    background-color: #c0c0c0;
+}
+
+.contact-right-part {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.contact-right-part-item {
+    width: calc(var(--contact-container-width) / 4);
+    height: calc(var(--contact-container-width) / 4);
+    background-color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: red;
+    font-size: calc(var(--contact-container-width) / 12);
+    font-weight: bold;
+    transition: background-color 0.5s ease-in-out;
+}
+
+@media screen and (max-width: 1500px) {
+    .contact-infos {
+        flex-direction: column;
+    }
+    .contact-right-part-item {
+        margin-bottom: 2rem;
+    }
+    .contact-right-part-item {
+        width: calc(var(--contact-container-width) / 3);
+        height: calc(var(--contact-container-width) / 3);
+    }
+}

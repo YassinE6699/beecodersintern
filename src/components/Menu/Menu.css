@@ -1,0 +1,18 @@
+.menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.menu-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 52rem;
+    color: red;
+    border-bottom: red 3px solid;
+}
+
+.menu-title-img {
+    width: 6rem;
+}

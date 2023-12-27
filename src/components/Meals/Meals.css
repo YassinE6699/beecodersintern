@@ -1,0 +1,50 @@
+.meals {
+    display: flex;
+    flex-direction: column;
+    margin: 2rem 0rem;
+    width: 100%;
+}
+
+.meals-title {
+    color: green;
+    align-self: flex-start;
+    margin-left: 8rem;
+    display: inline;
+}
+
+.meals-list {
+    display: grid;
+    width: 90%;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    align-self: center;
+}
+
+.meals-more {
+    color: red;
+    text-decoration: underline;
+    font-size: 1.5rem;
+    align-self: center;
+}
+
+.meals-more:hover {
+    opacity: 0.6;
+    transition: opacity 0.15s ease-in-out;
+}
+
+.add-btn {
+    width: 3%;
+    border: none;
+    margin-left: 2rem;
+    border-radius: 25%;
+    cursor: pointer;
+    transition: opacity 0.15s ease-in-out;
+}
+.add-btn:hover {
+    opacity: 0.6;
+}
+
+.add-img {
+    border-radius: 25%;
+    width: 100%;
+    background-color: rgb(4, 105, 156);
+}

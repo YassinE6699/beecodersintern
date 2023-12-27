@@ -1,0 +1,66 @@
+.meal {
+    display: flex;
+    flex-direction: column;
+    padding: 0.25rem;
+    margin: 1rem 0.75rem;
+    border-radius: 1rem;
+    position: relative;
+}
+
+.meal:hover {
+    /* border: 1px solid black; */
+    /* cursor: pointer; */
+    transition: border 0.15s ease-in-out;
+}
+
+.meal-item {
+    margin: 0.25rem 0.25rem;
+}
+
+.meal-img {
+    width: 100%;
+    align-self: center;
+}
+
+.meal-name {
+    color: red;
+    margin-left: 1rem;
+}
+
+.meal-price {
+    color: green;
+    margin-left: 1rem;
+}
+
+
+.meal-options {
+    display: flex;
+    position: absolute;
+    top: 1.5rem;
+    right: 1rem;
+    /* background-color: black; */
+    padding: 0.25rem;
+    width: 6rem;
+    justify-content: space-evenly;
+    margin-top: 0.5rem;
+}
+
+.option {
+    width: 2rem;
+    height: 2rem;
+    cursor: pointer;
+    border-radius: 25%;
+    transition: opacity 0.15s ease-in-out;
+}
+
+.option:hover {
+    opacity: 0.5;
+}
+
+.options-modify {
+    background-color: rgb(255, 187, 60);
+}
+
+.options-delete {
+    background-color: rgb(255, 0, 0);
+}
