@@ -5,6 +5,7 @@
     align-items: center;
     width: 35%;
     height: 70%;
+    padding: 2rem;
     background-color: rgb(40, 40, 40);
     border-radius: 10%;
     position: fixed;
@@ -62,4 +63,9 @@
 }
 .popup-btn-add {
     background-color: green;
+}
+
+.popup-image-selector-btn {
+    width: 15%;
+    font-size: 1rem;
 }
